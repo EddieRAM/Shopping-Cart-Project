@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+font-family: 'Source Sans Pro', sans-serif; 
+letter-spacing: 1px;
+}
+.head-title {
+display: flex;
+justify-content: center;
+margin: 20px 0px;
+}
+
+.top-bar {
+align-items: center;
+display: flex;
+height: 100px;
+justify-content: space-around;
+margin-bottom: 10px;
+width: 100%;
+}
+
+.top-bar .input-name-group {
+align-items: flex-start;
+display: flex;
+}
+
+.top-bar .input-terms-group {
+align-items: flex-start;
+display: flex;
+}
+
+.container {
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+
+.items {
+display: flex;
+flex-basis: 70%;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.item {
+border: 2px solid rgb(104, 104, 104);
+border-radius: 5px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+height: auto;
+margin: 5px;
+width: 200px;
+}
+
+.item .item__sku {
+display: none;
+}
+
+.item .item__title {
+flex-grow: 1;
+padding: 10px;
+text-align: center;
+}
+
+.item .item__image {
+width: 100%;
+}
+
+.item .item__add {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+min-height: 5vh;
+background-color: rgb(255, 145, 0);
+border: none;
+border-radius: 4px;
+cursor: pointer;
+letter-spacing: 4px; 
+margin: 2px;
+padding: 5px;
+color: white;
+box-shadow: inset 5px 0 0 0 #f9e506;
+transition: ease-out 0.3s;
+font-size: 0.8rem;
+outline: none;
+}
+
+.item .item__add:hover { 
+box-shadow: inset 300px 0 0 0 #f9e506;
+color: black;
+}
+
+.cart {
+display: flex;
+flex-basis: 30%;
+flex-flow: column wrap; 
+}
+
+ol li {
+display: flex;
+flex-flow: column nowrap;
+margin: 10px 0px;
+padding: 20px;
+cursor: pointer;
+background-color: rgb(214, 214, 214);
+transition: ease-out 0.3s;
+border-radius: 4px;
+text-align: center;
+}
+
+ol li:hover {
+display: flex;
+flex-flow: column nowrap;
+margin: 10px 0px;
+padding: 20px;
+cursor: pointer;
+background-color: rgb(138, 22, 22);
+border-radius: 4px;
+}
+
+.cart .cart__title {
+flex-basis: 1;
+font-size: 16pt;
+text-align: center;
+}
